@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WU4-4O-GAM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--购物车-->
+        <scene sceneID="X2s-5Z-GRt">
+            <objects>
+                <tableViewController title="购物车" id="Tmc-CQ-HXr" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="19s-dD-Yjf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ssr-HV-ul1">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ssr-HV-ul1" id="98f-nF-Fua">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tmc-CQ-HXr" id="ngG-GE-24P"/>
+                            <outlet property="delegate" destination="Tmc-CQ-HXr" id="VVA-EM-UHC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="x6N-Ts-SlI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RO6-L5-Mo8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="521"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="DiG-ZP-BMG">
+            <objects>
+                <navigationController title="购物车" id="WU4-4O-GAM" customClass="Bqu_NavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="购物车" image="Tabbar_shoppingcar" selectedImage="Tabbar_shoppingcar_selected" id="b2m-PL-gPf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zVz-TG-7RL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Tmc-CQ-HXr" kind="relationship" relationship="rootViewController" id="0sg-iC-bd7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laG-rF-T9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="521"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tabbar_shoppingcar" width="26" height="26"/>
+        <image name="Tabbar_shoppingcar_selected" width="26" height="26"/>
+    </resources>
+</document>
