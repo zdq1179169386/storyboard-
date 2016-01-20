@@ -15,6 +15,7 @@
 		38E7178C1C4636CB00192CE2 /* BquAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E7178B1C4636CB00192CE2 /* BquAppUITests.m */; };
 		38E717A81C46524400192CE2 /* Bqu_TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E717A71C46524400192CE2 /* Bqu_TabBarController.m */; };
 		38E717AB1C46527D00192CE2 /* Bqu_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E717AA1C46527D00192CE2 /* Bqu_NavigationController.m */; };
+		38F1DFB71C4F65D600EA7D76 /* UITabBar+BadgeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1DFB61C4F65D600EA7D76 /* UITabBar+BadgeValue.m */; };
 		38F364E51C47365800CD492D /* Classify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F364E41C47365800CD492D /* Classify.storyboard */; };
 		38F364E71C47366A00CD492D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F364E61C47366A00CD492D /* Home.storyboard */; };
 		38F364E91C47376500CD492D /* Promotion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F364E81C47376500CD492D /* Promotion.storyboard */; };
@@ -66,6 +67,8 @@
 		38E717A71C46524400192CE2 /* Bqu_TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bqu_TabBarController.m; path = BquApp/Common/Main/Bqu_TabBarController.m; sourceTree = SOURCE_ROOT; };
 		38E717A91C46527D00192CE2 /* Bqu_NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bqu_NavigationController.h; path = BquApp/Common/Main/Bqu_NavigationController.h; sourceTree = SOURCE_ROOT; };
 		38E717AA1C46527D00192CE2 /* Bqu_NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bqu_NavigationController.m; path = BquApp/Common/Main/Bqu_NavigationController.m; sourceTree = SOURCE_ROOT; };
+		38F1DFB51C4F65D600EA7D76 /* UITabBar+BadgeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+BadgeValue.h"; sourceTree = "<group>"; };
+		38F1DFB61C4F65D600EA7D76 /* UITabBar+BadgeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+BadgeValue.m"; sourceTree = "<group>"; };
 		38F364E41C47365800CD492D /* Classify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Classify.storyboard; sourceTree = "<group>"; };
 		38F364E61C47366A00CD492D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		38F364E81C47376500CD492D /* Promotion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Promotion.storyboard; sourceTree = "<group>"; };
@@ -253,6 +256,8 @@
 		38E717A01C46518300192CE2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				38F1DFB51C4F65D600EA7D76 /* UITabBar+BadgeValue.h */,
+				38F1DFB61C4F65D600EA7D76 /* UITabBar+BadgeValue.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -618,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F1DFB71C4F65D600EA7D76 /* UITabBar+BadgeValue.m in Sources */,
 				38F365051C4752CF00CD492D /* Bqu_UserCenterController.m in Sources */,
 				38E717AB1C46527D00192CE2 /* Bqu_NavigationController.m in Sources */,
 				38E717A81C46524400192CE2 /* Bqu_TabBarController.m in Sources */,

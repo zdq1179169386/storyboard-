@@ -8,6 +8,7 @@
 
 #import "Bqu_HomeController.h"
 #import "Bqu_ClassifyController.h"
+#import "UITabBar+BadgeValue.h"
 @interface Bqu_HomeController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.navigationController.tabBarController.tabBar showBadgeOnItemIndex:@"2" Index:0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,18 +57,18 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)scan:(id)sender {
-    self.hidesBottomBarWhenPushed = YES;
-    [self performSegueWithIdentifier:@"goScan" sender:self];
+    
+     self.hidesBottomBarWhenPushed = YES;
+//    [self performSegueWithIdentifier:@"goScan" sender:self];
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.tabBarController.tabBar hideBadgeOnItemIndex:0];
+
 }
-*/
+
 
 @end
