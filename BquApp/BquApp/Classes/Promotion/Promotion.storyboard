@@ -8,19 +8,50 @@
         <!--推广-->
         <scene sceneID="KDM-8x-8iY">
             <objects>
-                <tableViewController title="推广" id="W5u-hS-ULI" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="f3f-MX-Jr6">
+                <tableViewController title="推广" id="W5u-hS-ULI" customClass="Bqu_PromotionController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="133" sectionHeaderHeight="28" sectionFooterHeight="28" id="f3f-MX-Jr6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ehc-yj-4sd">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Promotioncell" rowHeight="133" id="ehc-yj-4sd" customClass="Bqu_PromotionCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="133"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ehc-yj-4sd" id="36u-QL-x5U">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="132"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OXX-SM-1Fj">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="2"/>
+                                        </progressView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HaU-MQ-UfE">
+                                            <rect key="frame" x="285" y="51" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="Y75-dn-3ig"/>
+                                                <constraint firstAttribute="width" constant="30" id="w1F-7H-LZ3"/>
+                                            </constraints>
+                                        </activityIndicatorView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1fQ-I5-mUc">
+                                            <rect key="frame" x="0.0" y="1" width="600" height="131"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="1fQ-I5-mUc" secondAttribute="bottom" id="8oJ-En-3yo"/>
+                                        <constraint firstItem="1fQ-I5-mUc" firstAttribute="leading" secondItem="36u-QL-x5U" secondAttribute="leading" id="ECb-WZ-JB5"/>
+                                        <constraint firstItem="OXX-SM-1Fj" firstAttribute="leading" secondItem="36u-QL-x5U" secondAttribute="leading" id="Pbi-Ou-C4d"/>
+                                        <constraint firstAttribute="trailing" secondItem="OXX-SM-1Fj" secondAttribute="trailing" id="QsY-sh-Jwb"/>
+                                        <constraint firstItem="1fQ-I5-mUc" firstAttribute="top" secondItem="36u-QL-x5U" secondAttribute="top" constant="1" id="Vke-oI-z84"/>
+                                        <constraint firstAttribute="trailing" secondItem="1fQ-I5-mUc" secondAttribute="trailing" id="Xdx-TI-Hfd"/>
+                                        <constraint firstItem="OXX-SM-1Fj" firstAttribute="top" secondItem="36u-QL-x5U" secondAttribute="top" id="eHQ-rl-i1x"/>
+                                        <constraint firstItem="HaU-MQ-UfE" firstAttribute="centerX" secondItem="36u-QL-x5U" secondAttribute="centerX" id="wHG-Vt-gva"/>
+                                        <constraint firstItem="HaU-MQ-UfE" firstAttribute="centerY" secondItem="36u-QL-x5U" secondAttribute="centerY" id="zSi-Of-meS"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="image" destination="1fQ-I5-mUc" id="cfu-Ue-jDA"/>
+                                    <outlet property="indicator" destination="HaU-MQ-UfE" id="oE4-5G-nwj"/>
+                                    <outlet property="progress" destination="OXX-SM-1Fj" id="Tfe-RW-6CL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

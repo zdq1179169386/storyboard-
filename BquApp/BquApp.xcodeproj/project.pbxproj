@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		386656DD1C75AD070054AF23 /* Bqu_PromotionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386656DC1C75AD070054AF23 /* Bqu_PromotionController.m */; };
+		386656E01C75AF150054AF23 /* Bqu_PromotionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 386656DF1C75AF150054AF23 /* Bqu_PromotionCell.m */; };
 		38E717681C4636CA00192CE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E717671C4636CA00192CE2 /* main.m */; };
 		38E7176B1C4636CA00192CE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E7176A1C4636CA00192CE2 /* AppDelegate.m */; };
 		38E7176E1C4636CA00192CE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E7176D1C4636CA00192CE2 /* ViewController.m */; };
@@ -49,6 +51,10 @@
 /* Begin PBXFileReference section */
 		138323C7789F7BFD9ED3DF2F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		32D7F9AE878793245AEE391B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		386656DB1C75AD070054AF23 /* Bqu_PromotionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_PromotionController.h; sourceTree = "<group>"; };
+		386656DC1C75AD070054AF23 /* Bqu_PromotionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_PromotionController.m; sourceTree = "<group>"; };
+		386656DE1C75AF150054AF23 /* Bqu_PromotionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_PromotionCell.h; sourceTree = "<group>"; };
+		386656DF1C75AF150054AF23 /* Bqu_PromotionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_PromotionCell.m; sourceTree = "<group>"; };
 		38E717631C4636CA00192CE2 /* BquApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BquApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E717671C4636CA00192CE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38E717691C4636CA00192CE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -355,6 +361,8 @@
 		38F364F41C473D8D00CD492D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				386656DB1C75AD070054AF23 /* Bqu_PromotionController.h */,
+				386656DC1C75AD070054AF23 /* Bqu_PromotionController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -369,6 +377,8 @@
 		38F364F61C473D8D00CD492D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				386656DE1C75AF150054AF23 /* Bqu_PromotionCell.h */,
+				386656DF1C75AF150054AF23 /* Bqu_PromotionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -628,7 +638,9 @@
 				38E717AB1C46527D00192CE2 /* Bqu_NavigationController.m in Sources */,
 				38E717A81C46524400192CE2 /* Bqu_TabBarController.m in Sources */,
 				38E7176E1C4636CA00192CE2 /* ViewController.m in Sources */,
+				386656E01C75AF150054AF23 /* Bqu_PromotionCell.m in Sources */,
 				38E7176B1C4636CA00192CE2 /* AppDelegate.m in Sources */,
+				386656DD1C75AD070054AF23 /* Bqu_PromotionController.m in Sources */,
 				38F365081C4754B300CD492D /* Bqu_UserCenterFirstCell.m in Sources */,
 				38F364FF1C473EE100CD492D /* Bqu_ClassifyController.m in Sources */,
 				38E717681C4636CA00192CE2 /* main.m in Sources */,
