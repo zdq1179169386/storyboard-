@@ -8,3 +8,4 @@ pod 'Masonry'
 pod 'MJRefresh'
 pod 'MJExtension'
 pod 'IQKeyboardManager'
+pod "SloppySwiper"

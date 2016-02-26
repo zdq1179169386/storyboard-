@@ -20,6 +20,44 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.navigationController.tabBarController.tabBar showBadgeOnItemIndex:@"2" Index:0];
+    
+//    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//    dispatch_group_t group = dispatch_group_create();
+//    dispatch_group_async(group, queue, ^{
+//        [NSThread sleepForTimeInterval:1];
+//        NSLog(@"group1");
+//    });
+//    dispatch_group_async(group, queue, ^{
+//        [NSThread sleepForTimeInterval:2];
+//        NSLog(@"group2");
+//    });
+//    dispatch_group_async(group, queue, ^{
+//        [NSThread sleepForTimeInterval:3];
+//        NSLog(@"group3");
+//    });
+//    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+//        NSLog(@"updateUi");
+//    });  
+//    dispatch_release(group);
+    
+    dispatch_queue_t queue = dispatch_queue_create("gcdtest.rongfzh.yc", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"dispatch_async1");
+    });
+    dispatch_async(queue, ^{
+        [NSThread sleepForTimeInterval:4];
+        NSLog(@"dispatch_async2");
+    });
+    dispatch_barrier_async(queue, ^{
+        NSLog(@"dispatch_barrier_async");
+        [NSThread sleepForTimeInterval:4];
+        
+    });
+    dispatch_async(queue, ^{
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"dispatch_async3");  
+    });
 }
 
 - (void)didReceiveMemoryWarning {

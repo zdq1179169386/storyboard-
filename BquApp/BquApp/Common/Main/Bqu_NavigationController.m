@@ -7,8 +7,11 @@
 //
 
 #import "Bqu_NavigationController.h"
-
+#import <SloppySwiper.h>
 @interface Bqu_NavigationController ()
+
+@property (strong, nonatomic) SloppySwiper *swiper;
+
 
 @end
 
@@ -24,8 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-
+    //侧滑手势
+    self.swiper = [[SloppySwiper alloc] initWithNavigationController:self];
+    self.delegate = self.swiper;
 }
 
 - (void)didReceiveMemoryWarning {
