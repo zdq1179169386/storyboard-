@@ -17,6 +17,10 @@
 		38E7178C1C4636CB00192CE2 /* BquAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E7178B1C4636CB00192CE2 /* BquAppUITests.m */; };
 		38E717A81C46524400192CE2 /* Bqu_TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E717A71C46524400192CE2 /* Bqu_TabBarController.m */; };
 		38E717AB1C46527D00192CE2 /* Bqu_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E717AA1C46527D00192CE2 /* Bqu_NavigationController.m */; };
+		38EDE7DF1C8560440014CF6C /* Left.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EDE7DE1C8560440014CF6C /* Left.storyboard */; };
+		38EDE7E31C85609B0014CF6C /* Bqu_DrawerLeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EDE7E21C85609B0014CF6C /* Bqu_DrawerLeftController.m */; };
+		38EDE7E61C8560CA0014CF6C /* Right.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EDE7E51C8560CA0014CF6C /* Right.storyboard */; };
+		38EDE7E91C8560F00014CF6C /* Bqu_DrawerRightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EDE7E81C8560F00014CF6C /* Bqu_DrawerRightController.m */; };
 		38F1DFB71C4F65D600EA7D76 /* UITabBar+BadgeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1DFB61C4F65D600EA7D76 /* UITabBar+BadgeValue.m */; };
 		38F364E51C47365800CD492D /* Classify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F364E41C47365800CD492D /* Classify.storyboard */; };
 		38F364E71C47366A00CD492D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F364E61C47366A00CD492D /* Home.storyboard */; };
@@ -73,6 +77,12 @@
 		38E717A71C46524400192CE2 /* Bqu_TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bqu_TabBarController.m; path = BquApp/Common/Main/Bqu_TabBarController.m; sourceTree = SOURCE_ROOT; };
 		38E717A91C46527D00192CE2 /* Bqu_NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bqu_NavigationController.h; path = BquApp/Common/Main/Bqu_NavigationController.h; sourceTree = SOURCE_ROOT; };
 		38E717AA1C46527D00192CE2 /* Bqu_NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bqu_NavigationController.m; path = BquApp/Common/Main/Bqu_NavigationController.m; sourceTree = SOURCE_ROOT; };
+		38EDE7DE1C8560440014CF6C /* Left.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Left.storyboard; sourceTree = "<group>"; };
+		38EDE7E11C85609B0014CF6C /* Bqu_DrawerLeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_DrawerLeftController.h; sourceTree = "<group>"; };
+		38EDE7E21C85609B0014CF6C /* Bqu_DrawerLeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_DrawerLeftController.m; sourceTree = "<group>"; };
+		38EDE7E51C8560CA0014CF6C /* Right.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Right.storyboard; sourceTree = "<group>"; };
+		38EDE7E71C8560F00014CF6C /* Bqu_DrawerRightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_DrawerRightController.h; sourceTree = "<group>"; };
+		38EDE7E81C8560F00014CF6C /* Bqu_DrawerRightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_DrawerRightController.m; sourceTree = "<group>"; };
 		38F1DFB51C4F65D600EA7D76 /* UITabBar+BadgeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+BadgeValue.h"; sourceTree = "<group>"; };
 		38F1DFB61C4F65D600EA7D76 /* UITabBar+BadgeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+BadgeValue.m"; sourceTree = "<group>"; };
 		38F364E41C47365800CD492D /* Classify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Classify.storyboard; sourceTree = "<group>"; };
@@ -183,6 +193,8 @@
 		38E717991C46518300192CE2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				38EDE7DC1C855FF80014CF6C /* Left */,
+				38EDE7DD1C855FF80014CF6C /* Right */,
 				38E7179B1C46518300192CE2 /* Home */,
 				38E7179C1C46518300192CE2 /* Promotion */,
 				38E7179A1C46518300192CE2 /* Classify */,
@@ -310,6 +322,44 @@
 			);
 			name = Main;
 			path = Libs/Main;
+			sourceTree = "<group>";
+		};
+		38EDE7DC1C855FF80014CF6C /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				38EDE7E01C8560660014CF6C /* Controller */,
+				38EDE7DE1C8560440014CF6C /* Left.storyboard */,
+			);
+			name = Left;
+			path = UserCenter/Left;
+			sourceTree = "<group>";
+		};
+		38EDE7DD1C855FF80014CF6C /* Right */ = {
+			isa = PBXGroup;
+			children = (
+				38EDE7E41C8560B50014CF6C /* Controller */,
+			);
+			name = Right;
+			path = UserCenter/Right;
+			sourceTree = "<group>";
+		};
+		38EDE7E01C8560660014CF6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38EDE7E11C85609B0014CF6C /* Bqu_DrawerLeftController.h */,
+				38EDE7E21C85609B0014CF6C /* Bqu_DrawerLeftController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		38EDE7E41C8560B50014CF6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38EDE7E51C8560CA0014CF6C /* Right.storyboard */,
+				38EDE7E71C8560F00014CF6C /* Bqu_DrawerRightController.h */,
+				38EDE7E81C8560F00014CF6C /* Bqu_DrawerRightController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		38F364EE1C473D7700CD492D /* Controller */ = {
@@ -556,9 +606,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				38E717731C4636CA00192CE2 /* Assets.xcassets in Resources */,
+				38EDE7DF1C8560440014CF6C /* Left.storyboard in Resources */,
 				38F364E51C47365800CD492D /* Classify.storyboard in Resources */,
 				38F364E91C47376500CD492D /* Promotion.storyboard in Resources */,
 				38F364EB1C47377500CD492D /* ShoppingCart.storyboard in Resources */,
+				38EDE7E61C8560CA0014CF6C /* Right.storyboard in Resources */,
 				38F364ED1C47378600CD492D /* UserCenter.storyboard in Resources */,
 				38F364E71C47366A00CD492D /* Home.storyboard in Resources */,
 			);
@@ -633,7 +685,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38EDE7E31C85609B0014CF6C /* Bqu_DrawerLeftController.m in Sources */,
 				38F1DFB71C4F65D600EA7D76 /* UITabBar+BadgeValue.m in Sources */,
+				38EDE7E91C8560F00014CF6C /* Bqu_DrawerRightController.m in Sources */,
 				38F365051C4752CF00CD492D /* Bqu_UserCenterController.m in Sources */,
 				38E717AB1C46527D00192CE2 /* Bqu_NavigationController.m in Sources */,
 				38E717A81C46524400192CE2 /* Bqu_TabBarController.m in Sources */,
