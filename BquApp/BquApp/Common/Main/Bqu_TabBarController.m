@@ -17,6 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIStoryboard * HomeSB = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
+    UIStoryboard * ClassifySB = [UIStoryboard storyboardWithName:@"Classify" bundle:nil];
+    UIStoryboard * PromotionSB = [UIStoryboard storyboardWithName:@"Promotion" bundle:nil];
+    UIStoryboard * ShoppingCartSB = [UIStoryboard storyboardWithName:@"ShoppingCart" bundle:nil];
+    UIStoryboard * UserCenterSB = [UIStoryboard storyboardWithName:@"UserCenter" bundle:nil];
+    
+    self.viewControllers = @[HomeSB.instantiateInitialViewController,
+                           PromotionSB.instantiateInitialViewController,
+                           ClassifySB.instantiateInitialViewController,
+                           ShoppingCartSB.instantiateInitialViewController,
+                           UserCenterSB.instantiateInitialViewController];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {

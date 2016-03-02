@@ -17,7 +17,6 @@
 		38E7178C1C4636CB00192CE2 /* BquAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E7178B1C4636CB00192CE2 /* BquAppUITests.m */; };
 		38E717A81C46524400192CE2 /* Bqu_TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E717A71C46524400192CE2 /* Bqu_TabBarController.m */; };
 		38E717AB1C46527D00192CE2 /* Bqu_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E717AA1C46527D00192CE2 /* Bqu_NavigationController.m */; };
-		38F1DFB71C4F65D600EA7D76 /* UITabBar+BadgeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1DFB61C4F65D600EA7D76 /* UITabBar+BadgeValue.m */; };
 		38F364FF1C473EE100CD492D /* Bqu_ClassifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F364FE1C473EE100CD492D /* Bqu_ClassifyController.m */; };
 		38F365021C47499100CD492D /* Bqu_HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F365011C47499100CD492D /* Bqu_HomeController.m */; };
 		38F365051C4752CF00CD492D /* Bqu_UserCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F365041C4752CF00CD492D /* Bqu_UserCenterController.m */; };
@@ -31,8 +30,11 @@
 		38FE83371C86CEC900EAD23F /* ShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FE83301C86CEC900EAD23F /* ShoppingCart.storyboard */; };
 		38FE83381C86CEC900EAD23F /* UserCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FE83311C86CEC900EAD23F /* UserCenter.storyboard */; };
 		38FE83431C86CEE400EAD23F /* Bqu_DrawerLeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE833C1C86CEE400EAD23F /* Bqu_DrawerLeftController.m */; };
-		38FE83441C86CEE400EAD23F /* Bqu_LeftRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE833E1C86CEE400EAD23F /* Bqu_LeftRootViewController.m */; };
 		38FE83451C86CEE400EAD23F /* Bqu_DrawerRightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE83421C86CEE400EAD23F /* Bqu_DrawerRightController.m */; };
+		38FE834D1C86D5C800EAD23F /* UITabBar+BadgeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE834B1C86D5C800EAD23F /* UITabBar+BadgeValue.m */; };
+		38FE83501C86D5E000EAD23F /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE834F1C86D5E000EAD23F /* UIWindow+Extension.m */; };
+		38FE83531C86DAC600EAD23F /* Bqu_LeftRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE83521C86DAC600EAD23F /* Bqu_LeftRootViewController.m */; };
+		38FE835E1C86E26500EAD23F /* Bqu_LeftRootTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE835D1C86E26500EAD23F /* Bqu_LeftRootTableCell.m */; };
 		E4000BE47247CE10D3240AB2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D7F9AE878793245AEE391B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -78,8 +80,6 @@
 		38E717A71C46524400192CE2 /* Bqu_TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bqu_TabBarController.m; path = BquApp/Common/Main/Bqu_TabBarController.m; sourceTree = SOURCE_ROOT; };
 		38E717A91C46527D00192CE2 /* Bqu_NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bqu_NavigationController.h; path = BquApp/Common/Main/Bqu_NavigationController.h; sourceTree = SOURCE_ROOT; };
 		38E717AA1C46527D00192CE2 /* Bqu_NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bqu_NavigationController.m; path = BquApp/Common/Main/Bqu_NavigationController.m; sourceTree = SOURCE_ROOT; };
-		38F1DFB51C4F65D600EA7D76 /* UITabBar+BadgeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+BadgeValue.h"; sourceTree = "<group>"; };
-		38F1DFB61C4F65D600EA7D76 /* UITabBar+BadgeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+BadgeValue.m"; sourceTree = "<group>"; };
 		38F364FD1C473EE100CD492D /* Bqu_ClassifyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_ClassifyController.h; sourceTree = "<group>"; };
 		38F364FE1C473EE100CD492D /* Bqu_ClassifyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_ClassifyController.m; sourceTree = "<group>"; };
 		38F365001C47499100CD492D /* Bqu_HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_HomeController.h; sourceTree = "<group>"; };
@@ -99,10 +99,16 @@
 		38FE83311C86CEC900EAD23F /* UserCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserCenter.storyboard; sourceTree = "<group>"; };
 		38FE833B1C86CEE400EAD23F /* Bqu_DrawerLeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_DrawerLeftController.h; sourceTree = "<group>"; };
 		38FE833C1C86CEE400EAD23F /* Bqu_DrawerLeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_DrawerLeftController.m; sourceTree = "<group>"; };
-		38FE833D1C86CEE400EAD23F /* Bqu_LeftRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_LeftRootViewController.h; sourceTree = "<group>"; };
-		38FE833E1C86CEE400EAD23F /* Bqu_LeftRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_LeftRootViewController.m; sourceTree = "<group>"; };
 		38FE83411C86CEE400EAD23F /* Bqu_DrawerRightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_DrawerRightController.h; sourceTree = "<group>"; };
 		38FE83421C86CEE400EAD23F /* Bqu_DrawerRightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_DrawerRightController.m; sourceTree = "<group>"; };
+		38FE834A1C86D5C800EAD23F /* UITabBar+BadgeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+BadgeValue.h"; sourceTree = "<group>"; };
+		38FE834B1C86D5C800EAD23F /* UITabBar+BadgeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+BadgeValue.m"; sourceTree = "<group>"; };
+		38FE834E1C86D5E000EAD23F /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
+		38FE834F1C86D5E000EAD23F /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
+		38FE83511C86DAC600EAD23F /* Bqu_LeftRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_LeftRootViewController.h; sourceTree = "<group>"; };
+		38FE83521C86DAC600EAD23F /* Bqu_LeftRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_LeftRootViewController.m; sourceTree = "<group>"; };
+		38FE835C1C86E26500EAD23F /* Bqu_LeftRootTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_LeftRootTableCell.h; sourceTree = "<group>"; };
+		38FE835D1C86E26500EAD23F /* Bqu_LeftRootTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_LeftRootTableCell.m; sourceTree = "<group>"; };
 		4BFB3CC26BB8FA4F735048F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -273,8 +279,8 @@
 		38E717A01C46518300192CE2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				38F1DFB51C4F65D600EA7D76 /* UITabBar+BadgeValue.h */,
-				38F1DFB61C4F65D600EA7D76 /* UITabBar+BadgeValue.m */,
+				38FE83491C86D5C800EAD23F /* UITabBar+BadgeValue */,
+				38FE834C1C86D5C800EAD23F /* UIWindow+Extension */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 		38FE83391C86CEE400EAD23F /* Left */ = {
 			isa = PBXGroup;
 			children = (
+				38FE835B1C86E23200EAD23F /* View */,
 				38FE833A1C86CEE400EAD23F /* Controller */,
 			);
 			path = Left;
@@ -469,8 +476,8 @@
 			children = (
 				38FE833B1C86CEE400EAD23F /* Bqu_DrawerLeftController.h */,
 				38FE833C1C86CEE400EAD23F /* Bqu_DrawerLeftController.m */,
-				38FE833D1C86CEE400EAD23F /* Bqu_LeftRootViewController.h */,
-				38FE833E1C86CEE400EAD23F /* Bqu_LeftRootViewController.m */,
+				38FE83511C86DAC600EAD23F /* Bqu_LeftRootViewController.h */,
+				38FE83521C86DAC600EAD23F /* Bqu_LeftRootViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -490,6 +497,33 @@
 				38FE83421C86CEE400EAD23F /* Bqu_DrawerRightController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		38FE83491C86D5C800EAD23F /* UITabBar+BadgeValue */ = {
+			isa = PBXGroup;
+			children = (
+				38FE834A1C86D5C800EAD23F /* UITabBar+BadgeValue.h */,
+				38FE834B1C86D5C800EAD23F /* UITabBar+BadgeValue.m */,
+			);
+			path = "UITabBar+BadgeValue";
+			sourceTree = "<group>";
+		};
+		38FE834C1C86D5C800EAD23F /* UIWindow+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				38FE834E1C86D5E000EAD23F /* UIWindow+Extension.h */,
+				38FE834F1C86D5E000EAD23F /* UIWindow+Extension.m */,
+			);
+			path = "UIWindow+Extension";
+			sourceTree = "<group>";
+		};
+		38FE835B1C86E23200EAD23F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38FE835C1C86E26500EAD23F /* Bqu_LeftRootTableCell.h */,
+				38FE835D1C86E26500EAD23F /* Bqu_LeftRootTableCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4458DB85E98713174EF4FCDC /* Pods */ = {
@@ -696,17 +730,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38FE83441C86CEE400EAD23F /* Bqu_LeftRootViewController.m in Sources */,
 				38FE83431C86CEE400EAD23F /* Bqu_DrawerLeftController.m in Sources */,
-				38F1DFB71C4F65D600EA7D76 /* UITabBar+BadgeValue.m in Sources */,
 				38F365051C4752CF00CD492D /* Bqu_UserCenterController.m in Sources */,
 				38FE83451C86CEE400EAD23F /* Bqu_DrawerRightController.m in Sources */,
 				38E717AB1C46527D00192CE2 /* Bqu_NavigationController.m in Sources */,
+				38FE834D1C86D5C800EAD23F /* UITabBar+BadgeValue.m in Sources */,
 				38E717A81C46524400192CE2 /* Bqu_TabBarController.m in Sources */,
 				38E7176E1C4636CA00192CE2 /* ViewController.m in Sources */,
 				386656E01C75AF150054AF23 /* Bqu_PromotionCell.m in Sources */,
 				38E7176B1C4636CA00192CE2 /* AppDelegate.m in Sources */,
 				386656DD1C75AD070054AF23 /* Bqu_PromotionController.m in Sources */,
+				38FE83531C86DAC600EAD23F /* Bqu_LeftRootViewController.m in Sources */,
+				38FE83501C86D5E000EAD23F /* UIWindow+Extension.m in Sources */,
+				38FE835E1C86E26500EAD23F /* Bqu_LeftRootTableCell.m in Sources */,
 				38F365081C4754B300CD492D /* Bqu_UserCenterFirstCell.m in Sources */,
 				38F364FF1C473EE100CD492D /* Bqu_ClassifyController.m in Sources */,
 				38E717681C4636CA00192CE2 /* main.m in Sources */,

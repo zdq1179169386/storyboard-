@@ -7,12 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "Bqu_TabBarController.h"
-#import <MMDrawerController.h>
-#import "Bqu_DrawerLeftController.h"
-#import "Bqu_DrawerRightController.h"
+
+#import "UIWindow+Extension.h"
 @interface AppDelegate ()
-@property (nonatomic,strong) MMDrawerController * drawerController;
 
 
 @end
@@ -27,65 +24,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    Bqu_TabBarController * tb = [[Bqu_TabBarController alloc] init];
-    
-    UIStoryboard * HomeSB = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
-    UIStoryboard * ClassifySB = [UIStoryboard storyboardWithName:@"Classify" bundle:nil];
-    UIStoryboard * PromotionSB = [UIStoryboard storyboardWithName:@"Promotion" bundle:nil];
-    UIStoryboard * ShoppingCartSB = [UIStoryboard storyboardWithName:@"ShoppingCart" bundle:nil];
-    UIStoryboard * UserCenterSB = [UIStoryboard storyboardWithName:@"UserCenter" bundle:nil];
-
-    tb.viewControllers = @[HomeSB.instantiateInitialViewController,
-                           PromotionSB.instantiateInitialViewController,
-                           ClassifySB.instantiateInitialViewController,
-                           ShoppingCartSB.instantiateInitialViewController,
-                           UserCenterSB.instantiateInitialViewController];
-
-//    self.window.rootViewController = tb;
-    
-    UIStoryboard * LeftSB = [UIStoryboard storyboardWithName:@"Left" bundle:nil];
-    UIStoryboard * RightSB = [UIStoryboard storyboardWithName:@"Right" bundle:nil];
-
-    
-    Bqu_DrawerLeftController * leftSideDrawerViewController = LeftSB.instantiateInitialViewController;
-    
-    UIViewController * centerViewController = tb;
-    
-    Bqu_DrawerRightController * rightSideDrawerViewController = RightSB.instantiateInitialViewController;
-    
-//    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:centerViewController];
-    //    [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
-//    UINavigationController * rightSideNavController = [[MMNavigationController alloc] initWithRootViewController:rightSideDrawerViewController];
-    //    [rightSideNavController setRestorationIdentifier:@"MMExampleRightNavigationControllerRestorationKey"];
-//    UINavigationController * leftSideNavController = [[MMNavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
-    //    [leftSideNavController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
-    self.drawerController = [[MMDrawerController alloc]
-                             initWithCenterViewController:centerViewController
-                             leftDrawerViewController:leftSideDrawerViewController
-                             rightDrawerViewController:rightSideDrawerViewController];
-    [self.drawerController setShowsShadow:NO];
-    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
-    [self.drawerController setMaximumRightDrawerWidth:200.0];
-    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-    
-//    [self.drawerController
-//     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
-//         MMDrawerControllerDrawerVisualStateBlock block;
-//         block = [[MMExampleDrawerVisualStateManager sharedManager]
-//                  drawerVisualStateBlockForDrawerSide:drawerSide];
-//         if(block){
-//             block(drawerController, drawerSide, percentVisible);
-//         }
-//     }];
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    UIColor * tintColor = [UIColor colorWithRed:29.0/255.0
-                                          green:173.0/255.0
-                                           blue:234.0/255.0
-                                          alpha:1.0];
-    [self.window setTintColor:tintColor];
-    [self.window setRootViewController:self.drawerController];
+    [self.window switchRootViewController];
     
     [self.window makeKeyAndVisible];
     

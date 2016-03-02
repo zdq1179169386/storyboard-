@@ -1,5 +1,5 @@
 //
-//  Bqu_LeftRootViewController.h
+//  Bqu_LeftRootTableCell.h
 //  BquApp
 //
 //  Created by yb on 16/3/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Bqu_LeftRootViewController : UITableViewController
+@interface Bqu_LeftRootTableCell : UITableViewCell
 
 @end

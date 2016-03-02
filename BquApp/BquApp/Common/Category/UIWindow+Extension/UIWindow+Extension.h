@@ -1,5 +1,5 @@
 //
-//  Bqu_LeftRootViewController.h
+//  UIWindow+Extension.h
 //  BquApp
 //
 //  Created by yb on 16/3/2.
@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Bqu_LeftRootViewController : UITableViewController
+@interface UIWindow (Extension)
+
+- (void)switchRootViewController;
+
 
 @end
