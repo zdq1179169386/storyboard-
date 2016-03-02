@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Left-->
         <scene sceneID="Cbo-hJ-xPT">
             <objects>
                 <tableViewController id="rgP-H2-csM" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                             <outlet property="delegate" destination="rgP-H2-csM" id="AoA-w3-vvC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="SMu-Db-PlR"/>
+                    <navigationItem key="navigationItem" title="Left" id="SMu-Db-PlR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HbU-pT-FYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

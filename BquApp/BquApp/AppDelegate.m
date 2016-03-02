@@ -43,12 +43,15 @@
 
 //    self.window.rootViewController = tb;
     
+    UIStoryboard * LeftSB = [UIStoryboard storyboardWithName:@"Left" bundle:nil];
+    UIStoryboard * RightSB = [UIStoryboard storyboardWithName:@"Right" bundle:nil];
+
     
-    Bqu_DrawerLeftController * leftSideDrawerViewController = [[Bqu_DrawerLeftController alloc] init];
+    Bqu_DrawerLeftController * leftSideDrawerViewController = LeftSB.instantiateInitialViewController;
     
     UIViewController * centerViewController = tb;
     
-    Bqu_DrawerRightController * rightSideDrawerViewController = [[Bqu_DrawerRightController alloc] init];
+    Bqu_DrawerRightController * rightSideDrawerViewController = RightSB.instantiateInitialViewController;
     
 //    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:centerViewController];
     //    [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];

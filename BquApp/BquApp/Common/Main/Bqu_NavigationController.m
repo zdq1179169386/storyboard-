@@ -23,13 +23,14 @@
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor redColor],NSForegroundColorAttributeName,nil] forState:UIControlStateSelected];
     
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //侧滑手势
     self.swiper = [[SloppySwiper alloc] initWithNavigationController:self];
     self.delegate = self.swiper;
+    
+
 }
 
 - (void)didReceiveMemoryWarning {

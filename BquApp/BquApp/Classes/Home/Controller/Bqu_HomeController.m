@@ -9,6 +9,7 @@
 #import "Bqu_HomeController.h"
 #import "Bqu_ClassifyController.h"
 #import "UITabBar+BadgeValue.h"
+#import <UIViewController+MMDrawerController.h>
 @interface Bqu_HomeController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
@@ -58,8 +59,14 @@
         [NSThread sleepForTimeInterval:1];
         NSLog(@"dispatch_async3");  
     });
+    
+    UIBarButtonItem * leftItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(leftDrawerButtonPress:)];
+    self.navigationItem.leftBarButtonItem = leftItem;
 }
-
+-(void)leftDrawerButtonPress:(id)sender
+{
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
