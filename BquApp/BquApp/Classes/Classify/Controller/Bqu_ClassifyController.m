@@ -10,6 +10,9 @@
 
 @interface Bqu_ClassifyController ()
 
+/** <#label#> */
+@property(nonatomic,strong) UITableView * tabelView;
+
 @end
 
 @implementation Bqu_ClassifyController
@@ -19,9 +22,20 @@
     
     
 }
+-(UITableView *)tabelView
+{
+    if (!_tabelView) {
+        _tabelView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+        _tabelView.delegate = self;
+        _tabelView.dataSource = self;
+        [self.view addSubview:_tabelView];
+    }
+    return _tabelView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tabelView;
     
 }
 
@@ -31,6 +45,24 @@
 }
 - (IBAction)back:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString * ID = @"<#cell#>";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:<#UITableViewCellStyleSubtitle#> reuseIdentifier:ID];
+    }
+    
+    return cell;
 }
 
 /*

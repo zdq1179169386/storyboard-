@@ -1,20 +1,19 @@
 //
-//  Bqu_LeftRootViewController.m
+//  Bqu_ShoppingCartController.m
 //  BquApp
 //
-//  Created by yb on 16/3/2.
+//  Created by yb on 16/3/3.
 //  Copyright © 2016年 yb. All rights reserved.
 //
 
-#import "Bqu_LeftRootViewController.h"
-#import "Bqu_LeftRootTableCell.h"
-#import <UIViewController+MMDrawerController.h>
-#import "Bqu_TabBarController.h"
-@interface Bqu_LeftRootViewController ()
+#import "Bqu_ShoppingCartController.h"
+
+#define TEST_URL @"http://appapi2.bqu.com"
+@interface Bqu_ShoppingCartController ()
 
 @end
 
-@implementation Bqu_LeftRootViewController
+@implementation Bqu_ShoppingCartController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,39 +34,24 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 10;
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
- 
-    Bqu_LeftRootTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeftRootCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"第%ld行",indexPath.row];
+    // Configure the cell...
     
     return cell;
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-//    [self.mm_drawerController setMaximumLeftDrawerWidth:[UIScreen mainScreen].bounds.size.width animated:NO completion:nil];
-//    [self.mm_drawerController setCenterViewController:[[Bqu_TabBarController alloc] init] withCloseAnimation:YES completion:nil];
-}
+*/
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [self.mm_drawerController setMaximumLeftDrawerWidth:280.0f animated:NO completion:nil];
-
-}
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

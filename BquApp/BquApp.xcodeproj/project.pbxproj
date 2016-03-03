@@ -22,6 +22,8 @@
 		38F365051C4752CF00CD492D /* Bqu_UserCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F365041C4752CF00CD492D /* Bqu_UserCenterController.m */; };
 		38F365081C4754B300CD492D /* Bqu_UserCenterFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F365071C4754B300CD492D /* Bqu_UserCenterFirstCell.m */; };
 		38F3650B1C4754D200CD492D /* Bqu_UserCenterSecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F3650A1C4754D200CD492D /* Bqu_UserCenterSecondCell.m */; };
+		38F7056C1C87CD63008AE662 /* Bqu_ShoppingCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F7056B1C87CD63008AE662 /* Bqu_ShoppingCartController.m */; };
+		38F7058B1C884040008AE662 /* Bqu_CommentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F7058A1C884040008AE662 /* Bqu_CommentTableCell.m */; };
 		38FE83321C86CEC900EAD23F /* Classify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FE832B1C86CEC900EAD23F /* Classify.storyboard */; };
 		38FE83331C86CEC900EAD23F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FE832C1C86CEC900EAD23F /* Home.storyboard */; };
 		38FE83341C86CEC900EAD23F /* Left.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FE832D1C86CEC900EAD23F /* Left.storyboard */; };
@@ -35,6 +37,7 @@
 		38FE83501C86D5E000EAD23F /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE834F1C86D5E000EAD23F /* UIWindow+Extension.m */; };
 		38FE83531C86DAC600EAD23F /* Bqu_LeftRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE83521C86DAC600EAD23F /* Bqu_LeftRootViewController.m */; };
 		38FE835E1C86E26500EAD23F /* Bqu_LeftRootTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE835D1C86E26500EAD23F /* Bqu_LeftRootTableCell.m */; };
+		38FE83611C86F17500EAD23F /* Bqu_LeftDrawerSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FE83601C86F17500EAD23F /* Bqu_LeftDrawerSecondController.m */; };
 		E4000BE47247CE10D3240AB2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D7F9AE878793245AEE391B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +93,10 @@
 		38F365071C4754B300CD492D /* Bqu_UserCenterFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_UserCenterFirstCell.m; sourceTree = "<group>"; };
 		38F365091C4754D200CD492D /* Bqu_UserCenterSecondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_UserCenterSecondCell.h; sourceTree = "<group>"; };
 		38F3650A1C4754D200CD492D /* Bqu_UserCenterSecondCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_UserCenterSecondCell.m; sourceTree = "<group>"; };
+		38F7056A1C87CD63008AE662 /* Bqu_ShoppingCartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_ShoppingCartController.h; sourceTree = "<group>"; };
+		38F7056B1C87CD63008AE662 /* Bqu_ShoppingCartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_ShoppingCartController.m; sourceTree = "<group>"; };
+		38F705891C884040008AE662 /* Bqu_CommentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_CommentTableCell.h; sourceTree = "<group>"; };
+		38F7058A1C884040008AE662 /* Bqu_CommentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_CommentTableCell.m; sourceTree = "<group>"; };
 		38FE832B1C86CEC900EAD23F /* Classify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Classify.storyboard; sourceTree = "<group>"; };
 		38FE832C1C86CEC900EAD23F /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		38FE832D1C86CEC900EAD23F /* Left.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Left.storyboard; sourceTree = "<group>"; };
@@ -109,6 +116,8 @@
 		38FE83521C86DAC600EAD23F /* Bqu_LeftRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_LeftRootViewController.m; sourceTree = "<group>"; };
 		38FE835C1C86E26500EAD23F /* Bqu_LeftRootTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_LeftRootTableCell.h; sourceTree = "<group>"; };
 		38FE835D1C86E26500EAD23F /* Bqu_LeftRootTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_LeftRootTableCell.m; sourceTree = "<group>"; };
+		38FE835F1C86F17500EAD23F /* Bqu_LeftDrawerSecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_LeftDrawerSecondController.h; sourceTree = "<group>"; };
+		38FE83601C86F17500EAD23F /* Bqu_LeftDrawerSecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_LeftDrawerSecondController.m; sourceTree = "<group>"; };
 		4BFB3CC26BB8FA4F735048F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -348,6 +357,8 @@
 		38F364F01C473D7700CD492D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				38F705891C884040008AE662 /* Bqu_CommentTableCell.h */,
+				38F7058A1C884040008AE662 /* Bqu_CommentTableCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,6 +414,8 @@
 		38F364F71C473D9600CD492D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				38F7056A1C87CD63008AE662 /* Bqu_ShoppingCartController.h */,
+				38F7056B1C87CD63008AE662 /* Bqu_ShoppingCartController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -478,6 +491,8 @@
 				38FE833C1C86CEE400EAD23F /* Bqu_DrawerLeftController.m */,
 				38FE83511C86DAC600EAD23F /* Bqu_LeftRootViewController.h */,
 				38FE83521C86DAC600EAD23F /* Bqu_LeftRootViewController.m */,
+				38FE835F1C86F17500EAD23F /* Bqu_LeftDrawerSecondController.h */,
+				38FE83601C86F17500EAD23F /* Bqu_LeftDrawerSecondController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -738,9 +753,12 @@
 				38E717A81C46524400192CE2 /* Bqu_TabBarController.m in Sources */,
 				38E7176E1C4636CA00192CE2 /* ViewController.m in Sources */,
 				386656E01C75AF150054AF23 /* Bqu_PromotionCell.m in Sources */,
+				38F7058B1C884040008AE662 /* Bqu_CommentTableCell.m in Sources */,
 				38E7176B1C4636CA00192CE2 /* AppDelegate.m in Sources */,
+				38FE83611C86F17500EAD23F /* Bqu_LeftDrawerSecondController.m in Sources */,
 				386656DD1C75AD070054AF23 /* Bqu_PromotionController.m in Sources */,
 				38FE83531C86DAC600EAD23F /* Bqu_LeftRootViewController.m in Sources */,
+				38F7056C1C87CD63008AE662 /* Bqu_ShoppingCartController.m in Sources */,
 				38FE83501C86D5E000EAD23F /* UIWindow+Extension.m in Sources */,
 				38FE835E1C86E26500EAD23F /* Bqu_LeftRootTableCell.m in Sources */,
 				38F365081C4754B300CD492D /* Bqu_UserCenterFirstCell.m in Sources */,

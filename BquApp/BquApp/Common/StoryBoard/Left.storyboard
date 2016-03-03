@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="802" y="404"/>
         </scene>
-        <!--View Controller-->
+        <!--Bqu Left Drawer Second Controller-->
         <scene sceneID="GMC-Q1-C87">
             <objects>
-                <viewController id="aGr-L8-vE6" sceneMemberID="viewController">
+                <viewController id="aGr-L8-vE6" customClass="Bqu_LeftDrawerSecondController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5FV-zu-S06"/>
                         <viewControllerLayoutGuide type="bottom" id="bdo-SK-Vub"/>
