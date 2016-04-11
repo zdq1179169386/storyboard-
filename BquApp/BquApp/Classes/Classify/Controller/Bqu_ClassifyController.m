@@ -7,11 +7,10 @@
 //
 
 #import "Bqu_ClassifyController.h"
+#import "Bqu_ClassifyFirstCell.h"
+@interface Bqu_ClassifyController ()<UITableViewDataSource,UITableViewDelegate>
 
-@interface Bqu_ClassifyController ()
-
-/** <#label#> */
-@property(nonatomic,strong) UITableView * tabelView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -22,20 +21,10 @@
     
     
 }
--(UITableView *)tabelView
-{
-    if (!_tabelView) {
-        _tabelView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-        _tabelView.delegate = self;
-        _tabelView.dataSource = self;
-        [self.view addSubview:_tabelView];
-    }
-    return _tabelView;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.tabelView;
     
 }
 
@@ -56,15 +45,13 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * ID = @"<#cell#>";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:<#UITableViewCellStyleSubtitle#> reuseIdentifier:ID];
-    }
+    Bqu_ClassifyFirstCell * cell = (Bqu_ClassifyFirstCell*)[tableView dequeueReusableCellWithIdentifier:@"ClassifyFirstCell"];
     
-    return cell;
+    return cell;    return cell;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 130;
+}
 /*
 #pragma mark - Navigation
 

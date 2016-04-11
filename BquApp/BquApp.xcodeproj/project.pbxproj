@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		386656DD1C75AD070054AF23 /* Bqu_PromotionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386656DC1C75AD070054AF23 /* Bqu_PromotionController.m */; };
 		386656E01C75AF150054AF23 /* Bqu_PromotionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 386656DF1C75AF150054AF23 /* Bqu_PromotionCell.m */; };
+		387FFD5D1CB78485007D73D3 /* Bqu_ClassifyFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 387FFD5B1CB78485007D73D3 /* Bqu_ClassifyFirstCell.m */; };
 		38E717681C4636CA00192CE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E717671C4636CA00192CE2 /* main.m */; };
 		38E7176B1C4636CA00192CE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E7176A1C4636CA00192CE2 /* AppDelegate.m */; };
 		38E7176E1C4636CA00192CE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E7176D1C4636CA00192CE2 /* ViewController.m */; };
@@ -65,6 +66,8 @@
 		386656DC1C75AD070054AF23 /* Bqu_PromotionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_PromotionController.m; sourceTree = "<group>"; };
 		386656DE1C75AF150054AF23 /* Bqu_PromotionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_PromotionCell.h; sourceTree = "<group>"; };
 		386656DF1C75AF150054AF23 /* Bqu_PromotionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_PromotionCell.m; sourceTree = "<group>"; };
+		387FFD5A1CB78485007D73D3 /* Bqu_ClassifyFirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bqu_ClassifyFirstCell.h; sourceTree = "<group>"; };
+		387FFD5B1CB78485007D73D3 /* Bqu_ClassifyFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bqu_ClassifyFirstCell.m; sourceTree = "<group>"; };
 		38E717631C4636CA00192CE2 /* BquApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BquApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E717671C4636CA00192CE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38E717691C4636CA00192CE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -359,6 +362,8 @@
 			children = (
 				38F705891C884040008AE662 /* Bqu_CommentTableCell.h */,
 				38F7058A1C884040008AE662 /* Bqu_CommentTableCell.m */,
+				387FFD5A1CB78485007D73D3 /* Bqu_ClassifyFirstCell.h */,
+				387FFD5B1CB78485007D73D3 /* Bqu_ClassifyFirstCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -760,6 +765,7 @@
 				38FE83531C86DAC600EAD23F /* Bqu_LeftRootViewController.m in Sources */,
 				38F7056C1C87CD63008AE662 /* Bqu_ShoppingCartController.m in Sources */,
 				38FE83501C86D5E000EAD23F /* UIWindow+Extension.m in Sources */,
+				387FFD5D1CB78485007D73D3 /* Bqu_ClassifyFirstCell.m in Sources */,
 				38FE835E1C86E26500EAD23F /* Bqu_LeftRootTableCell.m in Sources */,
 				38F365081C4754B300CD492D /* Bqu_UserCenterFirstCell.m in Sources */,
 				38F364FF1C473EE100CD492D /* Bqu_ClassifyController.m in Sources */,

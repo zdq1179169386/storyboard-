@@ -17,7 +17,7 @@
 @property(nonatomic,strong) UILabel * name;
 
 /** <#label#> */
-@property(nonatomic,strong) <#UILabel#> * <#label#>;
+//@property(nonatomic,strong) <#UILabel#> * <#label#>;
 
 
 @end
